@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+body
+{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+   overflow: hidden;
+}
+.navv
+{
+    background:linear-gradient(to top right,rgba(205, 202, 202, 0.623),rgba(220, 217, 217, 0.61));
+   border-radius: 20px;
+    overflow: hidden;
+    width: 100vw;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    margin: 0px;
+    padding: 0px;
+    border-top: 0px;
+    position: sticky;
+    backdrop-filter: blur(1.2rem);
+    z-index: 60;
+    
+}
+.link12
+{
+  position: absolute;
+  border-width: 0px;
+  top: -23%;
+  left: 0%;
+  background: linear-gradient(to top left,rgba(6, 6, 6, 0.66),rgba(6, 6, 6, 0.66));
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 18px;
+    backdrop-filter: blur(1rem);
+    color: rgba(224, 218, 218, 0.84);
+    
+}
+.link13
+{
+  position: absolute;
+  border-width: 0px;
+  top: -23%;
+  left: 205px;
+  background: linear-gradient(to top left,rgba(6, 6, 6, 0.66),rgba(6, 6, 6, 0.66));
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 18px;
+    backdrop-filter: blur(1rem);
+    color: rgba(224, 218, 218, 0.84);
+    
+}
+.link14
+{
+  position: absolute;
+  border-width: 0px;
+  top: -23%;
+  left: 98px;
+  background: linear-gradient(to top left,rgba(6, 6, 6, 0.66),rgba(6, 6, 6, 0.66));
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 18px;
+    backdrop-filter: blur(1rem);
+    color: rgba(224, 218, 218, 0.84);
+    
+}
+.link15
+{
+  position: absolute;
+  border-width: 0px;
+  top: -23%;
+  left: 1440px;
+  background: linear-gradient(to top left,rgba(6, 6, 6, 0.66),rgba(6, 6, 6, 0.66));
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 18px;
+    backdrop-filter: blur(1rem);
+    color: rgba(224, 218, 218, 0.84);
+    
+}
+.link16
+{
+  position: absolute;
+  border-width: 0px;
+  top: -23%;
+  left: 1334px;
+  background: linear-gradient(to top left,rgba(6, 6, 6, 0.66),rgba(6, 6, 6, 0.66));
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 18px;
+    backdrop-filter: blur(1rem);
+    color: rgba(224, 218, 218, 0.84);
+    
+}
+.Head{
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    background: linear-gradient(to top left,rgba(0, 0, 0, 0.66),rgba(49, 49, 49, 0.889));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 42%;
+  }
+  /*SIGN IN*/
+  .Glass
+  {
+    position: absolute;
+    left: 500px;
+    top: 0%;
+      min-height: 300px;
+      width:40vh;
+      background:linear-gradient(to top right,rgba(88, 86, 86, 0.562),rgba(194, 192, 192, 0.359));
+      border-radius: 40px;
+      z-index: 13;
+      margin: 130px;
+      padding: 70px 30px;
+      box-shadow: 0 2px 40px #212121;
+  
+  
+  
+  
+  }
+  .Glass h1
+  {
+      margin: 0;
+      padding: 0 0 30px;
+      text-align: center;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #000000cf;
+      
+      
+  }
+  .Glass input
+  {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .Glass input[type=text],
+  .Glass input[type=password],
+  .Glass input[type=Email],
+  .Glass input[type=url],
+  .Glass input[type=number]
+  {
+      border: none;
+      border-bottom: 1px rgb(0, 0, 0);
+      background:linear-gradient(to top right,rgba(194, 192, 192, 0.662),rgba(192, 190, 190, 0.574));
+      outline: none;
+      height: 40px;
+      color:rgb(0, 0, 0);
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 40px;
+      border-right: 1px linear-gradient(to top right,rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.4));
+      padding: 20px 20px;
+  }
+  .Glass textarea
+  {
+    border: none;
+      border-bottom: 1px rgb(0, 0, 0);
+      background:linear-gradient(to top right,rgba(194, 192, 192, 0.662),rgba(192, 190, 190, 0.574));
+      outline: none;
+      height: 90px;
+      width: 240px;
+      color:rgb(0, 0, 0);
+      margin-bottom: 15px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 10px;
+      border-right: 1px linear-gradient(to top right,rgba(15, 15, 15, 0.8),rgba(15, 15, 15, 0.4));
+      padding: 20px 20px;
+  }
+  .Glass input[type=submit]
+  {
+      border: none;
+      outline: none;
+      height: 40px;
+      background:linear-gradient(to top right,rgba(198, 198, 198, 0.501),rgba(192, 190, 190, 0.288));
+      color:#0a0a0ae3;
+      font-size: 18px;
+      font-weight: bolder;
+      display: block;
+      border-radius: 35px;
+      
+      
+      z-index: 10
+  
+  }
+  .G1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background:linear-gradient(to top right,rgba(20, 20, 20, 0),rgba(20, 20, 20, 0));
+    backdrop-filter: blur(0.5rem);
+    height: 100vh;
+    width: 100vw;
+    z-index: 40;
+  
+  }
+  
+  .Glass button{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: linear-gradient(to top right,rgba(205, 202, 202, 0.715),rgba(209,202,202,0.644));
+    color:#000000e3;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 20px;
+    margin-left: 70px;
+    font-size: 18px;
+    font-weight: bolder;
+    display:block;
+    border-radius: 15px;
+    border-right: 1px linear-gradient(to top right,rgba(187, 187, 187, 0.8),rgba(190, 186, 186, 0.578));
+  }
+.circle1
+{
+    
+    position: absolute;
+    top: 53%;
+    left: -11%;
+    width: 590px;
+    height: 590px;
+    background: linear-gradient(to top left,rgba(233, 168, 3, 0.66),rgba(248, 49, 6, 1));
+    border-radius: 50%;
+    filter: blur(25px);
+    z-index: 2;
+}
+
+.circle2
+{
+    position: absolute;
+    top: -20%;
+    right: -14%;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(to top left,rgba(59, 109, 238, 1),rgba(0, 252, 222, 1));
+    border-radius: 50%;
+    filter: blur(25px);
+    z-index: 2;
+}
+.circle3
+{
+    
+    position: absolute;
+    top: -18%;
+    left: 11%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to top left,rgba(24, 25, 25, 0.889),rgba(238, 37, 37, 0.919));
+    border-radius: 50%;
+    filter: blur(25px);
+    z-index: 2;
+}
+.circle4
+{
+    
+    position: absolute;
+    top: 68%;
+    right: 15%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to top left,rgba(24, 24, 25, 0.889),rgb(79, 79, 79));
+    border-radius: 50%;
+    filter: blur(25px);
+    z-index: 2;
+}
+.Bigbox
+{
+    position: absolute;
+  top:3%;
+  left: 4%;
+  width: 1400px;
+    height: 700px;
+  background: linear-gradient(to top left,rgba(202, 194, 194, 0.19),rgba(166, 162, 162, 0.256));
+  border-radius: 60px;
+  padding: 10px;
+  backdrop-filter: blur(1rem);
+  z-index: 3;
+}
+ 
+.hh1
+{
+  margin-left: 690px;
+  margin-right: 750px;
+    color: whitesmoke;
+}
+.hh2
+{
+  margin-left: 740px;
+    color: whitesmoke;
+}
+.Box
+{
+    position: relative;
+   top: 0%;
+    width: 250px;
+      height: 350px;
+      background:linear-gradient(to top right,rgba(98, 97, 97, 0.467),rgba(121, 120, 120, 0.511));
+    border-radius: 40px;
+    margin-left: 200px;
+    margin-top: 150px;
+    float: left;
+    z-index: 3;
+    box-shadow: 0 0 15px rgb(29, 28, 28);
+    
+    overflow: hidden;
+}
+
+
+
+.Logo
+{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    
+}
+.Ratting
+{
+    position: absolute;
+  top:50%;
+  left: 8%;
+  width: 200px;
+    height: 45px;
+  background: linear-gradient(to top left,rgba(218, 215, 215, 0.507),rgba(255, 255, 255, 0.36));
+  backdrop-filter: blur(1rem);
+  border-radius: 30px;
+  margin: 0;
+  border-width: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.Box:hover .Ratting
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    padding: 0%;
+    width: 250px;
+    height: 350px;
+   
+    
+}
+
+.Content
+{
+    position: absolute;
+    bottom: 5%;
+    left: 28%;
+    width: 80px;
+    height: 30px;
+    background:linear-gradient(to top right,rgba(224, 220, 220, 0.43),rgba(215, 212, 212, 0.375));
+  border-radius: 20px;
+  border-width: 0px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+  }
+h4{
+    position: absolute;
+    left: 13%;
+    font-size: 14px;
+    color: whitesmoke;
+    
+}
+/*PETS*/
+.pups
+{
+  position: absolute;
+  top:0%;
+  background:linear-gradient(to top right,rgb(60, 59, 59),rgba(45, 45, 45));
+  backdrop-filter: blur(0.5rem);
+  height: 750px;
+  width: 1700px;
+  z-index: 11; 
+  
+  overflow: auto;
+}
+.headerr
+{
+  position: absolute;
+  top: 7%;
+  color: whitesmoke;
+}
+/*DOGS*/
+.Box1
+{
+    position: relative;
+   top: 10%;
+    width: 250px;
+      height: 350px;
+      background:linear-gradient(to top right,rgba(98, 97, 97, 0.467),rgba(121, 120, 120, 0.511));
+    border-radius: 40px;
+    margin: 60px;
+    padding-bottom: 10px;
+    float: left;
+    z-index: 3;
+    box-shadow: 0 0 15px rgb(29, 28, 28);
+    overflow: hidden;
+    
+}
+.infoo
+{
+    position: absolute;
+  top:88%;
+  left: 0%;
+  width: 250px;
+    height: 45px;
+  background: linear-gradient(to top left,rgba(15, 15, 15, 0.219),rgba(67, 66, 66, 0.17));
+  backdrop-filter: blur(0.6rem);
+  border-radius: 30px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin: 0;
+  border-width: 0px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  
+}
+
+
+.Box1:hover .infoo
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    padding: 0%;
+    width: 250px;
+    height: 350px;
+   
+    
+}
+p
+{
+  
+  padding: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(to right,rgba(247, 247, 247, 0.996),rgb(254, 254, 254));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Ratting1
+{
+    
+  width: 200px;
+    height: 45px;
+  background: linear-gradient(to top left,rgba(254, 254, 254, 0.529),rgba(255, 255, 255, 0.447));
+  backdrop-filter: blur(1rem);
+  border-radius: 30px;
+  margin: 0;
+  border-width: 0px;
+  box-shadow: 0,10,20px #000000cf;
+  z-index: 5;
+}
+.nothing
+{
+  background: linear-gradient(to right,rgba(248, 50, 6, 0.866),rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gg
+{
+  background: linear-gradient(to right,rgba(0, 149, 255, 0.896),rgb(0, 166, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 4px;
+}
+
+.Box11
+{
+    position: relative;
+   top: 0%;
+    width: 250px;
+      height: 350px;
+      background:linear-gradient(to top right,rgba(98, 97, 97, 0.467),rgba(121, 120, 120, 0.511));
+    border-radius: 40px;
+    margin-left: 70px;
+    margin-right: 50px;
+    margin-top: 200px;
+    float: left;
+    z-index: 3;
+    box-shadow: 0 0 15px rgb(29, 28, 28);
+    overflow: hidden;
+}
+
+.Box11:hover .Ratting
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    padding: 0%;
+    width: 250px;
+    height: 350px;
+   
+    
+}
+
+.Box12
+{
+  position: relative;
+  top: 10%;
+   width: 250px;
+     height: 350px;
+     background:linear-gradient(to top right,rgba(98, 97, 97, 0.467),rgba(121, 120, 120, 0.511));
+   border-radius: 40px;
+   margin-top: 200px;
+   margin: 60px;
+   padding-bottom: 10px;
+   float: left;
+   z-index: 3;
+   box-shadow: 0 0 15px rgb(29, 28, 28);
+   overflow: hidden;
+}
+
+.infooo
+{
+    position: absolute;
+  top:88%;
+  left: 0%;
+  width: 250px;
+    height: 45px;
+  background: linear-gradient(to top left,rgba(15, 15, 15, 0.219),rgba(67, 66, 66, 0.17));
+  backdrop-filter: blur(0.6rem);
+  border-radius: 30px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin: 0;
+  border-width: 0px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  
+}
+
+.Box12:hover .infooo
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0%;
+    padding: 0%;
+    width: 250px;
+    height: 350px;
+   
+    
+}
+.lan
+{
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  font-size: 38px;
+  color: aliceblue;
+  z-index: 5;
+}
+.lan1
+{
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  font-size: 38px;
+  color: aliceblue;
+  z-index: 5;
+}
+.lan2
+{
+  position: absolute;
+  top: 48%;
+  left: 20%;
+  font-size: 30px;
+  color: aliceblue;
+  z-index: 5;
+}
+
+.mm
+{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(to right,rgba(247, 247, 247, 0.996),rgb(254, 254, 254));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jj
+{
+  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
