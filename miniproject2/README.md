@@ -4,10 +4,13 @@ The change the password and the database name according to your convenience. (ma
 
 to download the node modules go to the miniproject2 folder and press the command --- npm install (all the node modules and dependencies will be downloaded)
 
-#The commands to run the project
-Step 1: split the terminal into 2 parts. (1 to run the server and other to start the react app)
-Step 2: on the right terminal make sure its on the public folder (cd public) and press the command --- node Server.js
-Step 3: Now on the left terminal press the command --- npm start
+-----The commands to run the project-----
+Step 1: split the terminal into 2 parts. (1 to run the server and other to start the react app).
+
+Step 2: on the right terminal make sure its on the public folder (cd public) and press the command --- node Server.js.
+
+Step 3: Now on the left terminal press the command --- npm start.
+
 Wait for few minuties and the app starts running.
 
 
