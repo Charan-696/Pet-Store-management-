@@ -1,0 +1,84 @@
+database - react.
+
+#table users:
+
+CREATE TABLE users (
+  user_id int NOT NULL AUTO_INCREMENT,
+  username varchar(255) NOT NULL,
+  email varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  full_name varchar(255) DEFAULT NULL,
+  balance int DEFAULT NULL,
+  created_at timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+#table categories:
+
+CREATE TABLE categories (
+  category_id int NOT NULL AUTO_INCREMENT,
+  category_name varchar(200) DEFAULT NULL,
+  image varchar(500) DEFAULT NULL,
+  PRIMARY KEY (category_id)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+
+#table sellers:
+
+CREATE TABLE `sellers` (
+  seller_id int NOT NULL AUTO_INCREMENT,
+  user_id int NOT NULL,
+  seller_name varchar(255) NOT NULL,
+  contact_email varchar(255) DEFAULT NULL,
+  contact_phone varchar(20) DEFAULT NULL,
+  PRIMARY KEY (seller_id),
+  UNIQUE KEY user_id (user_id),
+  CONSTRAINT sellers_ibfk_1 FOREIGN KEY (user_id) REFERENCES users (user_id)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+#table items:
+
+CREATE TABLE items (
+  item_id int NOT NULL AUTO_INCREMENT,
+  seller_id int NOT NULL,
+  item_name varchar(255) NOT NULL,
+  description text,
+  starting_price decimal(10,2) NOT NULL,
+  image varchar(255) DEFAULT NULL,
+  category_id int DEFAULT NULL,
+  PRIMARY KEY (item_id),
+  KEY seller_id (seller_id),
+  CONSTRAINT items_ibfk_1 FOREIGN KEY (seller_id) REFERENCES users (user_id)
+) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+#table watchlist:
+
+CREATE TABLE watchlist (
+  watchlist_id int NOT NULL AUTO_INCREMENT,
+  user_id int NOT NULL,
+  item_id int NOT NULL,
+  PRIMARY KEY (watchlist_id),
+  KEY user_id (user_id),
+  KEY item_id (item_id),
+  CONSTRAINT watchlist_ibfk_1 FOREIGN KEY (user_id) REFERENCES users (user_id),
+  CONSTRAINT watchlist_ibfk_2 FOREIGN KEY (item_id) REFERENCES items (item_id)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+#Procedure  used:
+
+ CREATE DEFINER=`root`@`localhost` PROCEDURE AddToWatchlist(IN p_user_id INT, IN p_item_id INT)
+BEGIN
+  DECLARE countRows INT;
+        SELECT COUNT(*) INTO countRows FROM Watchlist WHERE user_id = p_user_id AND item_id = p_item_id;
+        IF countRows > 0 THEN
+          DELETE FROM Watchlist WHERE user_id = p_user_id AND item_id = p_item_id;
+        ELSE
+          INSERT INTO Watchlist (user_id,item_id) VALUES (p_user_id, p_item_id);
+        END IF;
+END
